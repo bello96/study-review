@@ -6,15 +6,15 @@ for (const [key, value] of arr.entries()) {
 }
 
 // 找出数组交集
-function bingji(a, b) {
+function union(a, b) {
   return [...new Set([...a, ...b])];
 }
-// let c = bingji([1,2,3],[2,0,3])
+// let c = union([1,2,3],[2,0,3])
 // console.log(c)
 
 // 找出数组的并集
-function jiaoji(a, b) {
+function intersection(a, b) {
   return a.filter((i) => new Set(b).has(i));
 }
-// let d = jiaoji([2,6], [4,2,6]);
+// let d = intersection([2,6], [4,2,6]);
 // console.log(d);
