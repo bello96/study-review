@@ -18,3 +18,20 @@ function intersection(a, b) {
 }
 // let d = intersection([2,6], [4,2,6]);
 // console.log(d);
+
+
+// 初始化二维数组/矩阵呢？
+const array = Array(5).fill(''); 
+// 输出
+(5) ["", "", "", "", ""]
+
+const matrix = Array(5).fill(0).map(()=>Array(5).fill(0)); 
+// 输出
+// (5) [Array(5), Array(5), Array(5), Array(5), Array(5)]
+// 0: (5) [0, 0, 0, 0, 0]
+// 1: (5) [0, 0, 0, 0, 0]
+// 2: (5) [0, 0, 0, 0, 0]
+// 3: (5) [0, 0, 0, 0, 0]
+// 4: (5) [0, 0, 0, 0, 0]
+// length: 5
+
