@@ -5,12 +5,14 @@ for (const [key, value] of arr.entries()) {
   // console.log(key, value);
 }
 
+
 // 找出数组交集
 function union(a, b) {
   return [...new Set([...a, ...b])];
 }
 // let c = union([1,2,3],[2,0,3])
 // console.log(c)
+
 
 // 找出数组的并集
 function intersection(a, b) {
@@ -22,9 +24,7 @@ function intersection(a, b) {
 
 // 初始化二维数组/矩阵呢？
 const array = Array(5).fill(''); 
-// 输出
-(5) ["", "", "", "", ""]
-
+// 输出 (5) ["", "", "", "", ""]
 const matrix = Array(5).fill(0).map(()=>Array(5).fill(0)); 
 // 输出
 // (5) [Array(5), Array(5), Array(5), Array(5), Array(5)]
