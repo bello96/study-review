@@ -3,6 +3,7 @@ body {
 }
 /* 既然该属性可以阻止元素成为鼠标事件，那么修改页面该属性值为 none，就能避免在滚动时鼠标频繁触发包括hover在内的任何鼠标事件，从而提升了页面滚动时的性能。 */
 /* 使用滚动监听事件可实现灵活控制： */
+
 /* let timer = null
 window.addEventListener("scroll", function () {
     document.body.style.pointerEvents = 'none'; // 滚动时禁用鼠标事件
