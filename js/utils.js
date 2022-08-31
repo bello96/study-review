@@ -38,3 +38,8 @@ const matrix = Array(5).fill(0).map(()=>Array(5).fill(0));
 // 随机数字符串
 let rendNum = Math.random().toString(36).slice(2)
 // console.log(rendNum);
+
+
+const rgbToHex = (r, g, b) => "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+// let color = rgbToHex(255,255,255)
+// console.log(color);
