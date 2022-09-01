@@ -40,6 +40,7 @@ let rendNum = Math.random().toString(36).slice(2)
 // console.log(rendNum);
 
 
+// 生成颜色值
 const rgbToHex = (r, g, b) => "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
 // let color = rgbToHex(255,255,255)
 // console.log(color);
