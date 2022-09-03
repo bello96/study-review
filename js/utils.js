@@ -35,6 +35,7 @@ const matrix = Array(5).fill(0).map(()=>Array(5).fill(0));
 // 4: (5) [0, 0, 0, 0, 0]
 // length: 5
 
+
 // 随机数字符串
 let rendNum = Math.random().toString(36).slice(2)
 // console.log(rendNum);
