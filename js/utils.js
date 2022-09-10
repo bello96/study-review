@@ -19,7 +19,7 @@ function intersection(a, b) {
   return a.filter((i) => new Set(b).has(i));
 }
 // let d = intersection([2,6], [4,2,6]);
-// console.log(d);
+// console.log(d)
 
 
 // 初始化二维数组/矩阵呢？
