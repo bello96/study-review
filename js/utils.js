@@ -22,7 +22,7 @@ function intersection(a, b) {
 // console.log(d)
 
 
-// 初始化二维数组/矩阵呢？
+// 初始化二维数组/矩阵呢
 const array = Array(5).fill('');
 // 输出 (5) ["", "", "", "", ""]
 const matrix = Array(5).fill(0).map(() => Array(5).fill(0));
