@@ -45,3 +45,15 @@ let rendNum = Math.random().toString(36).slice(2)
 const rgbToHex = (r, g, b) => "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
 // let color = rgbToHex(255,255,255)
 // console.log(color);
+
+
+// 如何在foreach中终止循环
+// let arr = ['你好','我是','邓佳贝']
+// try{
+//     arr.forEach((item,index)=>{
+//         if(index === 1) throw 'err'
+//         console.log(item)
+//     })
+// } catch(e){
+//     console.log('后续代码',e)
+// }
