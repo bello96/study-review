@@ -57,3 +57,46 @@ const rgbToHex = (r, g, b) => "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toStr
 // } catch(e){
 //     console.log('后续代码',e)
 // }
+
+
+// 判断数据类型
+const typeOf = function (obj) {
+  return Object.prototype.toString.call(obj).slice(8, -1).toLowerCase();
+};
+// typeOf('你好')  // string
+// typeOf(123)  // number
+// typeOf([1,2])  // array
+// typeOf(new Date())  // date
+// typeOf(null) // null
+// typeOf(true) // boolean
+// typeOf(() => { }) // function  
+
+// 防抖
+const debounce = (() => {
+  let timer = null;
+  return (callback, wait = 800) => {
+    timer && clearTimeout(timer);
+    timer = setTimeout(callback, wait);
+  };
+})();
+
+// 节流
+const throttle = (() => {
+  let last = 0;
+  return (callback, wait = 800) => {
+    let now = +new Date();
+    if (now - last > wait) {
+      callback();
+      last = now;
+    }
+  };
+})();
+
+// 节流防抖使用方式(vue)
+// methods: {
+// loadList() {
+//   debounce(() => {
+//     console.log('加载数据')
+//   }, 500)
+//  }
+// }
