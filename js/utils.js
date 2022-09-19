@@ -51,7 +51,7 @@ const rgbToHex = (r, g, b) => "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toStr
 // let arr = ['你好','我是','邓佳贝']
 // try{
 //     arr.forEach((item,index)=>{
-//         if(index === 1) throw 'err'
+//        if(index === 1) throw 'err'
 //         console.log(item)
 //     })
 // } catch(e){
@@ -100,6 +100,7 @@ const throttle = (() => {
 //   }, 500)
 //  }
 // }
+
 
 
 // async await 与 promise 的优缺点
