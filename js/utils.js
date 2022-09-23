@@ -102,7 +102,6 @@ const throttle = (() => {
 // }
 
 
-
 // async await 与 promise 的优缺点
 // 优点：
 // 它做到了真正的串行的同步写法，代码阅读相对容易
