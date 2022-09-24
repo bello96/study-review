@@ -111,3 +111,38 @@ const throttle = (() => {
 // 缺点：
 // 用 await 可能会导致性能问题，因为 await 会阻塞代码，也许之后的异步代码并不依赖于前者，但仍然需要等待前者完成，导致代码失去了并发性。
 
+// 简单数组去重
+function duplicate(a1, a2) {
+  let c1 = a1.slice(0);
+  for (let i = 0; i < a2.length; i++) {
+    if (c1.includes(a2[i])) continue;
+    c1.push(a2[i]);
+  }
+  return c1;
+}
+// 复杂数组去重
+function duplicateObj(a1, a2) {
+  let c1 = a1.slice(0);
+  for (let i = 0; i < a2.length; i++) {
+    if (c1.findIndex((j) => j.name === a2[i].name) > -1) continue;
+    c1.push(a2[i]);
+  }
+  return c1;
+}
+
+
+// 实现一个
+// const bears = ["ice", "panda", "grizzly"];
+// let iterator = {
+//   index: 0,
+//   next() {
+//     if (this.index < bears.length) {
+//       return { done: false, value: bears[this.index++] };
+//     }
+//     return { done: true, value: undefined };
+//   },
+// };
+// console.log(iterator.next()); //{ done: false, value: 'ice' }
+// console.log(iterator.next()); //{ done: false, value: 'panda' }
+// console.log(iterator.next()); //{ done: false, value: 'grizzly' }
+// console.log(iterator.next()); //{ done: true, value: undefined }
