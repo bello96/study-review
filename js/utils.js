@@ -131,7 +131,7 @@ function duplicateObj(a1, a2) {
 }
 
 
-// 实现一个
+// 实现一个geiterator
 // const bears = ["ice", "panda", "grizzly"];
 // let iterator = {
 //   index: 0,
