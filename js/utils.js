@@ -111,6 +111,7 @@ const throttle = (() => {
 // 缺点：
 // 用 await 可能会导致性能问题，因为 await 会阻塞代码，也许之后的异步代码并不依赖于前者，但仍然需要等待前者完成，导致代码失去了并发性。
 
+
 // 简单数组去重
 function duplicate(a1, a2) {
   let c1 = a1.slice(0);
